@@ -1,0 +1,43 @@
+.Starters ul{
+    float: left;
+    display: block;
+}
+
+.Starters ul li a {
+    font-size: 28px;
+    text-align: left;
+}
+
+
+/* .Item {
+    margin-top: 50px;
+    text-align: left;
+}
+
+  /* Clear floats after the columns */
+  /* .Item:after {
+    content: "";
+    display: table;
+    clear: both;
+  }   */
+  .Item {
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    text-align: center;
+    background-color: #f1f1f1;
+    float: left;
+    margin: 10px;
+    width: 95%;
+  }
+
+  .ItemImage {
+    display: block;
+    float: left;
+    width: 30%;
+    margin: 0 10px -5px 0;
+  }
+  .ItemImage img {
+      width: 100%;
+      border-radius: 4px;
+  }
