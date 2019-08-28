@@ -107,3 +107,17 @@ ul li img {
   }
 
 
+
+.MainClass {
+  margin: 0 35% 0 35%; 
+  width: 30%;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .MainClass {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+  }
+}

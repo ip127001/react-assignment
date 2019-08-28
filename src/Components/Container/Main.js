@@ -4,6 +4,8 @@ import { Route, Link } from 'react-router-dom';
 
 import Category from '../Category/Category';
 import Starters from '../Category/Courses/Starters/Starters';
+import Starter from '../Category/Courses/Starters/Starter';
+
 import './Main.css';
 
 class Main extends Component {
@@ -25,7 +27,7 @@ class Main extends Component {
                             </label>
                         </li>
                         
-                        <li>
+                        <li>    
                             <div className="vl"></div>
                         </li>
                         <li>
@@ -39,6 +41,7 @@ class Main extends Component {
 
                 <Route path="/" exact component={Category} />
                 <Route path="/courses/:id" exact component={Starters} />
+                <Route path="/courses/starter/:id" exact component={Starter} />
             </div>
         )
     }

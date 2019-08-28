@@ -12,10 +12,6 @@ class Category extends Component {
         courses: ['starter', 'salad', 'dessert', 'dinner']
     }
 
-    courseClickedHandler = (id) => {
-        this.props.history.push({pathname: '/courses/' + id});
-    }
-
     render() {
         const {special, courses} = this.state;
 
@@ -46,5 +42,6 @@ class Category extends Component {
         )
     }
 }
+
 
 export default Category;
