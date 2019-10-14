@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 
 import { Route, Link } from 'react-router-dom';
 
+import ReactGA from 'react-ga';
+
 import Category from '../Category/Category';
 import Starters from '../Category/Courses/Starters/Starters';
 import Starter from '../Category/Courses/Starters/Starter';
@@ -15,7 +17,15 @@ class Main extends Component {
                 <nav>   
                     <ul>
                         <li><img src="icon.png" alt="hamburger-icon" /></li>
-                        <li><Link to="/">Food App</Link></li>
+                        <li>
+                        <ReactGA.OutboundLink
+                            eventLabel="myLabel"
+                            to="https://www.tryhard.gg"
+                            target="_blank"
+                        >
+                            Gaming
+                        </ReactGA.OutboundLink>
+                        </li>
                         <li><img src="img_avatar.png" alt="Avatar" style={{float: "right", marginRight: "10px", width: "50px", height: "50px", borderRadius: "50%"}} /></li>
                     </ul>
                     <ul>
