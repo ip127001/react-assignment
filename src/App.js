@@ -18,8 +18,8 @@ class App extends Component {
 
   someTrackingHandler = () => {
     ReactGA.event({
-      category: "some category",
-      action: "some action"
+      category: "User",
+      action: "button clicked"
     });
   }
 
